@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   }
+    .container{
+      background-color: #fff;
+      
+      width: 50%;
+      border-radius: 10px 10px;
+      /* box-shadow: 5px 1px 1px #888; */
+      
+    }
+    .heading{
+      
+      margin: 40px 40px;
+    }
+    .heading h2{
+      color: #66b1a7;
+    }
+    .heading h4{
+      color: #cad881;
+    }
+    .section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(1fr);
+    }
+    .monthly{
+      color: white;
+      background-color: #2bb3b3;
+      padding: 20px 40px;
+    }
+    .monthly label{
+      opacity: 0.5;
+    }
+    .btn{
+      border: none;
+    background-color: #bfdf33;
+    color: white;
+    padding: 13px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+
+    }
+    .why-us{
+      background-color:#4abebd ;
+      padding: 20px 40px;
+      color: white;
+    }
+
+
+    /* media query */
+    @media screen and (max-width: 400px) {
+      .container{
+      background-color: #fff;
+      
+      width: 70%;
+      border-radius: 10px 10px;
+      /* box-shadow: 5px 1px 1px #888; */
+      
+    }
+      .section{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr);
+      }
+    .btn{
+      border: none;
+    background-color: #bfdf33;
+    color: white;
+    padding: 5px 75px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-weight: bold; */
+    /* font-size: large; */
+
+    }
+
+    
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   <div class="heading">
+    <h2>join our Community</h2>
+    <h4>30-day, hassle-free money back guarantee</h4>
+    <p>Gain access to our full library of tutorials along with expert code reviews, Perfect for any developer who are serious about honing their skills</p>
+
+   </div>
+   <div class="section"> 
+   <div class="monthly">
+    <h3>Monthly Subscription</h3>
+    <span><b>$29</b> <label>per month</label> </span>
+    <h4>Full access for less than $1 a day</h4>
+    <button class="btn">Sign Up</button>
+   </div>
+   <div class="why-us">
+    <h3>Why Us</h3>
+    <p>Tutorials by industry experts <br> peer & expert code review <br> Codeing exerciser <br> Access to our GitHub repos <br>  Community forum <br> Flashcard forum <br> Flashcard decks <br> New videos every week</p>
+
+   </div>
+  </div>
+  </div>
+
+  
+  
+</body>
+</html>
